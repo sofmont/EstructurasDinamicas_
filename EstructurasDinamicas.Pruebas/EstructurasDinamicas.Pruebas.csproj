@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <RootNamespace>EstructurasDinamicas.Pruebas</RootNamespace>
+  </PropertyGroup>
+
+  <!-- Se compilan las mismas estructuras de la aplicación (enlazadas, no copiadas). -->
+  <ItemGroup>
+    <Compile Include="..\EstructurasDinamicas\Nodo.cs" Link="Estructuras\Nodo.cs" />
+    <Compile Include="..\EstructurasDinamicas\ListaEnlazada.cs" Link="Estructuras\ListaEnlazada.cs" />
+    <Compile Include="..\EstructurasDinamicas\PilaDinamica.cs" Link="Estructuras\PilaDinamica.cs" />
+    <Compile Include="..\EstructurasDinamicas\ColaDinamica.cs" Link="Estructuras\ColaDinamica.cs" />
+  </ItemGroup>
+
+</Project>
